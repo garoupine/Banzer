@@ -1,19 +1,18 @@
 # Banzer
 
-# Banzer
+
 
 Banzer is a small Vehicule built as a Project for UNI.
 Banzer is operated by a Raspberry Pi 3 Model B + 2017 Sure
 
-Banzer is a small Vehicule built as a Project for UNI.
-Banzer is operated by a Raspberry Pi 3 Model B + 2017 Sure
+
 
 
 ##Features
--[Badass]
--[Fast]
--[Smart]
--[Etc.]
+  -Badass
+  -Fast
+  -Smart
+  -Etc
 
 
 ##Installation
