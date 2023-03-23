@@ -8,33 +8,33 @@ Banzer is operated by a Raspberry Pi 3 Model B + 2017 Sure
 
 
 
-##Features
+## Features
   -Badass
   -Fast
   -Smart
   -Etc
 
 
-##Installation
+## Installation
 
-###Instructions
+### Instructions
 TBD
 
-###Dependencies
+### Dependencies
 NO Dependecies Yet
 
-##Usage
+## Usage
 Control Banzer ...
 
-##Configuration
+## Configuration
 Instructions comming soon.
 
 
 
-##License
+## License
 TBD
 
-##Contact
+## Contact
 missing.
 
 
