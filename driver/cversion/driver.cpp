@@ -17,7 +17,8 @@ int main() {
   pinMode(LED4_PIN, OUTPUT);
 
 
-for(int i=0;i<10;++i)
+
+for(int i=0;i<2;++i)
   // Turn on all four LEDs
  { digitalWrite(LED1_PIN, HIGH);
    delay(1000);
@@ -42,5 +43,6 @@ for(int i=0;i<10;++i)
 //digitalWrite(LED3_PIN, LOW);
 //digitalWrite(LED4_PIN, LOW);
 //digitalWrite(LED4_PIN, LOW);
+
   return 0;
 }

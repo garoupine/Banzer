@@ -8,7 +8,7 @@ then
 else
   # Run make command
   make
-  
+  make clean
   # Check if the make command was successful
   if [ $? -eq 0 ]
   then
