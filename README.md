@@ -15,7 +15,7 @@ Banzer is a small vehicle built as a project for UNI. It is operated by a Raspbe
 
 Banzer requires the following libraries to be installed:
 
-- **WiringPi:** This library can be downloaded from the official [WiringPi repository](https://github.com/WiringPi/WiringPi). To install the library, use the following commands:
+- **WiringPi:** This library can be downloaded from the official [WiringPi repository](https://github.com/WiringPi/WiringPi).\ Alternativly to download and build  the library, use the following commands:
 
   ```bash
   $ git clone https://github.com/WiringPi/WiringPi.git
