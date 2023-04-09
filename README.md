@@ -22,28 +22,24 @@ TBD
 
 ### Dependencies
 WiringPi.h  (gitrep https://github.com/WiringPi )
-  To install the library 
+To install the library use the following commands  
 
-```
+```bash
 $git clone https://github.com/WiringPi/WiringPi.git
-
 ```
 
-```
+```bash
 $cd WiringPi
-
-
 ```
 
-```
+```bash
 $git pull origin
-
 ```
 
+```bash
+$ ./build
 ```
-$./build
 
-```
 
 
 
