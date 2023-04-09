@@ -21,7 +21,19 @@ Banzer is operated by a Raspberry Pi 3 Model B + 2017
 TBD
 
 ### Dependencies
-NO Dependecies Yet
+WiringPi.h  (gitrep https://github.com/WiringPi )
+
+```python
+# This is a Python code block
+def greet(name):
+    print("Hello, " + name + "!")
+    
+greet("Alice")
+
+
+
+
+RSi.GPIO (pre-installed in the Pi intself)
 
 ## Usage
 Control Banzer ...
