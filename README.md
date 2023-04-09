@@ -22,14 +22,28 @@ TBD
 
 ### Dependencies
 WiringPi.h  (gitrep https://github.com/WiringPi )
+  To install the library 
 
-```python
-# This is a Python code block
-def greet(name):
-    print("Hello, " + name + "!")
-    
-greet("Alice")
+```
+$git clone https://github.com/WiringPi/WiringPi.git
 
+```
+
+```
+$cd WiringPi
+
+
+```
+
+```
+$git pull origin
+
+```
+
+```
+$./build
+
+```
 
 
 
