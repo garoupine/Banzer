@@ -1,0 +1,24 @@
+# Compiled object files
+*.o
+
+# Compiled dynamic libraries
+*.so
+*.dylib
+
+# Executables
+*.exe
+*.out
+
+# Build directories
+build/
+dist/
+
+# Python-specific files
+*.pyc
+__pycache__/
+
+# C++-specific files
+*.a
+*.dll
+*.lib
+
