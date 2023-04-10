@@ -11,6 +11,8 @@ Banzer is a small vehicle built as a project for UNI. It is operated by a Raspbe
 
 ## Installation
 
+
+
 ### Dependencies
 
 Banzer requires the following libraries to be installed:
@@ -23,7 +25,7 @@ Alternatively to download and build  the library, use the following commands:
   $ cd WiringPi
   $ git pull origin
   $ ./build
-
+  
 - **RSi.GPIO:** pre-installed in the PI_OS
 
 
@@ -31,7 +33,63 @@ Alternatively to download and build  the library, use the following commands:
 Control Banzer ...
 
 ## Configuration
-Instructions comming soon.
+### Instructions 
+To make the Pi run the driver 'program' at boot we used a bash script for compiling/building and runing the Program excutable to automate the process then created a linux service to run the command at boot.
+
+
+To create the linux service do the following:\
+Go to the folder located at
+
+```bash
+/etc/systemd/system/
+```
+
+Create a foo.service file and open it for edit.
+
+
+If ur programming on the Pi just run:
+
+```bash
+$ sudo nano /etc/systemd/system/foo.service
+```
+
+Replace foo with an appropriate task name.
+
+Next copy the following code to ur foo.service file 
+
+```markdown
+[Unit]
+Description=driver
+
+[Service]
+ExecStart=/home/user/path/to/my/driver
+Restart=on-failure
+Restartsec=30s
+User=root
+
+[Install]
+WantedBy=multi-user.target
+```
+After saving the changes and exiting the nano text editor run the following command to reload the systemd 
+
+```bash
+$ sudo systemctl daemon-reload
+```
+To enable the service to run at boot run 
+
+```bash
+$ sudo systemctl enable foo.service
+```
+To make sure the file has the correct permission to run at boot run
+
+```bash
+$ sudo chmod 644 /etc/systemd/system/foo.service
+```
+
+Then
+```bash
+$ sudo chown root:root /etc/systemd/system/foo.service
+```
 
 
 

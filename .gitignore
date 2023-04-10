@@ -12,7 +12,7 @@ driver
 # Build directories
 build/
 dist/
-
+Progress_Album
 # Python-specific files
 *.pyc
 __pycache__/

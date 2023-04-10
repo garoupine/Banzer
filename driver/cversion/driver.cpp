@@ -18,7 +18,8 @@ int main() {
 
 
 
-for(int i=0;i<2;++i)
+//for(int i=0;i<10;++i)
+while(true)
   // Turn on all four LEDs
  { digitalWrite(LED1_PIN, HIGH);
    delay(1000);
