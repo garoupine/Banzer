@@ -28,6 +28,7 @@ Alternatively to download and build  the library, use the following commands:
   
 - **RSi.GPIO:** pre-installed in the PI_OS
 
+- **Pytorch:** This library can be downloaded from the official [Pytorch webpage](https://pytorch.org/).
 
 ## Usage
 Control Banzer ...
