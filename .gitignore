@@ -15,6 +15,7 @@ driver/cversion/driver
 build/
 dist/
 Progress_Album
+2_D_platformer
 *.zip
 # Python-specific files
 *.pyc
