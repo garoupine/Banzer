@@ -10,7 +10,7 @@ GPIO.setup(22, GPIO.OUT)
 
 
 
-count =  5
+count = 2 
 for i in range(count):
 	# Turn on each LED in sequence
 	GPIO.output(17, GPIO.HIGH)

@@ -8,7 +8,9 @@
 # Executables
 *.exe
 *.out
-driver
+#driver
+driver/cversion/driver
+
 # Build directories
 build/
 dist/
