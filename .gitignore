@@ -12,6 +12,7 @@
 driver/cversion/driver
 Talk/data/
 Talk/recorded/
+config.txt
 
 # Build directories
 build/
