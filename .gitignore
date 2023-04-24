@@ -22,7 +22,7 @@ Progress_Album
 # Python-specific files
 *.pyc
 __pycache__/
-
+*.ipynb
 # C++-specific files
 *.a
 *.dll
