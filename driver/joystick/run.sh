@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-python ps.py
+python3 ps.py
