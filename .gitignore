@@ -10,6 +10,8 @@
 *.out
 #driver
 driver/cversion/driver
+Talk/data/mini_speech_commands/
+Talk/recorded/
 
 # Build directories
 build/
