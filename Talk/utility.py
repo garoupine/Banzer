@@ -72,7 +72,7 @@ def display_predictions(labels,predictions):
     plt.title("Probability distribution over the possible classes for the input")
     plt.show()
 
-def get_command(path):
+def get_command(path,commands):
     words = path.split('/')
-    first = words[0]
-    return first
+    return  [word for word in words if word in commands].pop(0)
+    #return command

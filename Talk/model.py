@@ -4,18 +4,21 @@
 """
 Module Name: module.py
 
-Description: This module contains a class that manages audio datasets for machine learning tasks. It provides 
-functions to download data from a given URL, prepare the data for training, get the labels, split the validation set,
-and transform the data into mel-spectrograms.
+- Description: This module contains a class that implements a deep learning model for 
+audio classification tasks.It provides methods to set up the model, train it on audio datasets,
+and make predictions on new data.
+
 
 Classes:
-- Datasetmanager: A class that manages audio datasets for machine learning tasks.
+- Model: class that implements a deep learning model using Keras for audio classification tasks.
 
 Functions:
+- predict():
+- get_prediction():
 
 
 Author: Messaoudi Dhia Elhak
-Date: 2023-04-24
+Date: 2023-04
 """
 
 
@@ -33,6 +36,8 @@ class Model():
         self.lables_num = len(labels)
         self.norm_layer = layers.Normalization()
         self.norm_layer.adapt(data=data.map(map_func=lambda spec, label: spec))
+        
+    def create_module(self):
         self.model = models.Sequential([
                     layers.Input(shape=self.shape),
                     layers.Resizing(32, 32),
@@ -46,6 +51,9 @@ class Model():
                     layers.Dropout(0.5),
                     layers.Dense(self.lables_num),
                     ])
+    
+    def load_module(self):
+        self.model=tf.keras.models.load_model('./api')
 
     def verbose(self):
         self.model.summary() 
@@ -66,11 +74,19 @@ class Model():
     def gethistory(self):
         return self.history
     
+    #Interferance methods 
     def predict(self,spectogram):
         return self.model.predict(spectogram)
     
     def get_prediction(self,spectogram):
         tmp = self.predict(spectogram)
         tmp = self.labels[tf.argmax(tf.nn.softmax(tmp[0]))]
-        print('predicted command',tmp)
+        #print('predicted command',tmp)
         return tmp
+
+    def save_module(self):
+        self.model.save('./api',save_format='tf')
+
+
+    
+        
