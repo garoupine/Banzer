@@ -24,15 +24,7 @@ Banzer is a small vehicle built as a project for UNI. It is operated by a Raspbe
 ## Dependencies
 Banzer requires the the following libraries/Packages:
 
-- **WiringPi:** This library can be downloaded from the official [WiringPi repository](https://github.com/WiringPi/WiringPi).
-Alternatively to download and build  the library, use the following commands:
 
-  ```bash
-  $ git clone https://github.com/WiringPi/WiringPi.git
-  $ cd WiringPi
-  $ git pull origin
-  $ ./build
-  ```
 - **RSi.GPIO:** pre-installed in the PI_OS
 
 - **pyPS4controller:** This Module is downloaded from the [Python Package index Webpage Pypi.org](https://pypi.org/project/pyPS4Controller/)
