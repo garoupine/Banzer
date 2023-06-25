@@ -1,3 +1,7 @@
+'''
+This is a Skript to test the Ps4 controller where we controle 4 different leds with the Controllerbuttons
+'''
+
 from pyPS4Controller.controller import Controller
 import RPi.GPIO as GPIO  
     
