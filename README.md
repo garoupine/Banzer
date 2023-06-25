@@ -29,7 +29,7 @@ Banzer requires the the following libraries/Packages:
 
 - **pyPS4controller:** This Module is downloaded from the [Python Package index Webpage Pypi.org](https://pypi.org/project/pyPS4Controller/)
 
-- **Pytorch:** This library can be downloaded from the official [Pytorch webpage](https://pytorch.org/).
+- **TensorFlow:** This library can be downloaded from the official [Pytorch webpage](https://pytorch.org/).
 
 
 ## Installation
